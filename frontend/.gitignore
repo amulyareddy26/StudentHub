@@ -1,0 +1,11 @@
+# Frontend / Vite ignore
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db

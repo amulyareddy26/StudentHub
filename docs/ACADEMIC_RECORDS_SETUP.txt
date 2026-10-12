@@ -1,0 +1,23 @@
+Academic Records API added
+
+Endpoints:
+GET    /api/academic-records
+GET    /api/academic-records?studentId=1
+GET    /api/academic-records/{id}
+POST   /api/academic-records
+PUT    /api/academic-records/{id}
+DELETE /api/academic-records/{id}
+
+POST/PUT JSON example (replace student ID with an existing student):
+{
+  "student": { "id": 1 },
+  "subject": "Mathematics",
+  "semester": "1",
+  "academicYear": "2026-2027",
+  "marksObtained": 85,
+  "maxMarks": 100,
+  "grade": "A",
+  "remarks": "Good work"
+}
+
+Spring Boot JPA ddl-auto update should create academic_records table at startup. Back up your database before deploying. Existing SecurityConfig permits all requests and should NOT be used for a public production deployment without authentication/authorization.
